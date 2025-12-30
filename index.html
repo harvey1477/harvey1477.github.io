@@ -1,26 +1,182 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Harvey Li</title>
+  <title>Hongguang Li</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;max-width:860px;margin:0 auto;padding:28px 18px;line-height:1.6;color:#111;}
+    body{margin:0;background:#fff;color:#111;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans";
+      line-height:1.65}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px}
     a{color:#0969da;text-decoration:none} a:hover{text-decoration:underline}
     hr{border:0;border-top:1px solid #e5e7eb;margin:18px 0}
+    h1{margin:0 0 6px;font-size:34px}
+    h2{margin:22px 0 10px;font-size:20px}
+    h3{margin:16px 0 8px;font-size:16px}
+    .meta{color:#444}
+    ul{padding-left:18px}
+    li{margin:6px 0}
+    .small{color:#666;font-size:14px}
+    .tag{display:inline-block;border:1px solid #e5e7eb;border-radius:999px;padding:2px 10px;margin:6px 6px 0 0;font-size:13px;color:#333}
+    details{border:1px solid #e5e7eb;border-radius:10px;padding:10px 12px;margin:10px 0;background:#fafafa}
+    summary{cursor:pointer;font-weight:600}
+    .grid{display:grid;grid-template-columns: 1fr 1fr;gap:14px}
+    @media (max-width: 760px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
-<body>
-  <h1>Harvey Li (李宏广)</h1>
-  <p>Personal Homepage · <a href="mailto:your@email.com">Email</a> · <a href="https://github.com/harvey1477">GitHub</a></p>
-  <hr/>
-  <h3>Biography</h3>
-  <p>这里写一段简介……</p>
 
-  <h3>Publications</h3>
+<body>
+<div class="wrap">
+
+  <h1>Hongguang Li (李宏广)</h1>
+  <div class="meta">
+    Research: Large Language Model (LLM), Conversational AI, NLP
+    <br/>
+    <!-- 建议公开邮箱即可；手机号可注释掉，避免骚扰 -->
+    Email: <a href="mailto:harvey2@mail.ustc.edu.cn">harvey2@mail.ustc.edu.cn</a>
+    <!-- · Phone: 18817828205 -->
+    <br/>
+  </div>
+
+  <hr/>
+
+  <h2>Profile</h2>
+  <p>
+    Head of QifuGPT-Chat Team and Senior Algorithm Expert at the LLM Department of the AI Center, Qifu Technology (formerly 360 DigiTech),
+    responsible for Qifu’s full credit-lifecycle Dialogue LLM (collections & telemarketing), and Member of the LLM Special Committee of
+    the Chinese Information Processing Society of China (CIPS). Former Head of LLM Team at JF SmartInvest (9636.HK), leading a team of 15+
+    engineers building foundation models and financial AI agents; Former Head of Conversational AI at Microsoft Xiaoice; previously NLP
+    Engineer in Huawei’s Intelligent Automotive BU. Author of 10+ papers (ACL/EMNLP/COLING/NAACL) and holder of 7 granted Chinese invention
+    patents.
+  </p>
+
+  <h2>Highlights</h2>
+
+  <details open>
+    <summary>Key Project Achievements</summary>
+    <ul>
+      <li><b>Qifu Technology – QifuGPT-Chat:</b> Delivered industry’s first end-to-end credit dialogue LLM POC; 65% win rate vs baseline; in a small online bucket improved collections recovery rate by 1pp (87% → 88%), estimated RMB 50M additional monthly revenue.</li>
+      <li><b>JF SmartInvest – FinSphere:</b> Built LLM-based FinSphere investment advisory agent within 6 months; surpassed major players (e.g., 60% vs East Money agent; 65% vs iWencai), with highest per-user interaction turns.</li>
+      <li><b>Microsoft Xiaoice – Memory Agent / XiaobingKnows:</b> 0-to-1 memory-enhanced conversational system within 6 months; launched on XEVA platform; also built open-domain conversational QA bot ahead of ChatGPT’s first release timeline.</li>
+      <li><b>Huawei – Intelligent Auto Assistant:</b> Core member delivering multi-intent understanding model and first-gen in-vehicle assistant across multiple auto projects.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Key Research Achievements</summary>
+    <ul>
+      <li><b>FinSphere & FinSearch</b> (IJCAI 2025 Oral, ACM ICAIF 2025): RL-based financial dialog agent & financial search agent.</li>
+      <li><b>COMEDY</b> (COLING 2025 Oral, Top 5%): Open-domain compressive memory-enhanced long-term conversational system.</li>
+      <li><b>Orca</b> (EMNLP 2023): First Chinese conversational MRC dataset.</li>
+      <li><b>Penguin</b> (EMNLP 2023): Largest Chinese generative MRC dataset.</li>
+      <li><b>LAUG</b> (ACL 2021): Robustness evaluation for task-oriented dialogue.</li>
+    </ul>
+  </details>
+
+  <h2>Work Experience</h2>
+
+  <details open>
+    <summary>Qifu Technology | Senior Expert | QifuGPT-Chat (Sep 2025 – Now)</summary>
+    <ul>
+      <li>Project owner leading QifuGPT-Chat team; built post-training team 0→1 supporting consumer credit full-lifecycle conversational AI.</li>
+      <li>Built QifuGPT-Chat-SFT (0.6B & 14B) via multi-stage instruction tuning; optimized to QifuGPT-Chat-0.6B via online RL / on-policy distillation; achieved P99 latency 150ms with 300 input tokens and 30 output tokens (after acceleration).</li>
+      <li>Deployed to outbound collections: 65% win rate vs baseline; usable-response 80%→85% (+5%); recovery rate 87%→88% (+1%) in small A/B; estimated RMB 50M additional monthly revenue.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>JF Smart Invest | Senior Manager, Expert | FinSphere Agent (Jul 2024 – Sep 2025)</summary>
+    <ul>
+      <li>Adopted MTSearch-R1 framework with stages: &lt;think&gt; → &lt;plan&gt; → &lt;Tool Data&gt; → &lt;think&gt; → &lt;answer&gt;.</li>
+      <li>Two-stage training: DAG-SFT cold start + multi-reward RL (MR-GRPO) with chain order / tool format / tool naming rewards.</li>
+      <li>Inference: uncertainty-based DAG node scheduling + dynamic early-stopping for efficient retrieval.</li>
+      <li>Evaluation: automated pairwise competitions + satisfaction; 60% win vs Eastmoney LLM; 65% win vs iWencai; satisfaction 58%; outperformed ZeroSearch & Search-R1 on general QA benchmarks.</li>
+      <li><b>Report Agent:</b> Finsphere-Report-32B for weekly AI industry reports via RAG + real-time DB; 50k-token input → 5k-token report; 2000+ reports across 130+ industries.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Microsoft Xiaoice | Applied Scientist (Jul 2021 – Jul 2024)</summary>
+    <ul>
+      <li><b>Xiaoice Memory Agent</b> (Jul 2023 – Jul 2024): Developed COMEDY compressive memory framework + Dolphin dataset; launched on XEVA; 50M+ interactions.</li>
+      <li><b>Xiaoice Role-Play</b> (Jul 2022 – Jul 2024): Instruction-tuning with 30B+ tokens → XLLM3-13B-instruct; dPO → XLLM3-13B-chat-dPO; launched on XEVA; 400M+ monthly interactions.</li>
+      <li><b>XiaobingKnows</b> (Jul 2021 – Jun 2022): Built open-domain conversational QA system from scratch; produced Orca & Penguin datasets (EMNLP 2023).</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Huawei | NLP Engineer | Huawei Assistant (Jul 2019 – Jul 2021)</summary>
+    <ul>
+      <li>In charge of in-vehicle voice assistant: NLU/NER/DM/NLG. Deployed TinyBERT distillation; NLU inference ~3ms; NER inference ~35ms.</li>
+      <li>NLU: 200k+ samples; 200+ intents; 3000+ slots. NER: 240k+ dataset task distillation.</li>
+    </ul>
+  </details>
+
+  <h2>Education</h2>
   <ul>
-    <li>Paper 1 ...</li>
-    <li>Paper 2 ...</li>
+    <li><b>M.Eng. in Automation</b>, University of Science and Technology of China (USTC, 985), Sep 2016 – Jun 2019 (GPA: Top 10%).</li>
+    <li><b>B.Eng. in Automation</b>, Donghua University (DHU, 211), Sep 2012 – Jun 2016 (GPA: Top 5%).</li>
   </ul>
+
+  <h2>Skills</h2>
+  <div>
+    <span class="tag">Finetuning / Instruction Tuning</span>
+    <span class="tag">RLHF / RLAIF / DPO / RLVR</span>
+    <span class="tag">Megatron-LM / DeepSpeed</span>
+    <span class="tag">Qwen-Agent / LangChain / LangGraph</span>
+    <span class="tag">PyTorch / TensorFlow / Keras</span>
+    <span class="tag">Python / C++</span>
+  </div>
+  <p class="small">
+    Experience with large models: GPT-4o, DeepSeek-V3, O1/O3, R1-0528, QwenMax, Qwen3-235B; instruction tuning on 10B+ models and RL fine-tuning methods.
+  </p>
+
+  <h2>Publications</h2>
+  <details open>
+    <summary>Paper List</summary>
+    <ul>
+      <li>Yiqing Shen, Jingshu Zhang, Feng Chen, Kaiyuan Yan, <b>Hongguang Li</b>. <i>FinSearch: A Temporal-Aware Search Agent Framework for Real-Time Financial Information Retrieval with LLMs.</i> ACM ICAIF 2025. <a href="https://doi.org/10.1145/3768292.3770382">DOI</a></li>
+      <li>Shijie Han, Jinshu Zhang, YiQing Sheng, Kaiyuan Yang, <b>Hongguang Li</b>. <i>FinSphere, a Real-Time Stock Analysis Agent Powered by Instruction-Tuned LLMs and Domain Tools.</i> IJCAI 2025 Workshop (FinLLM 2025), Corresponding.</li>
+      <li>Changhai Zhou, Shijie Han, Lining Yang, Yuhua Zhou, Xu Cheng, Yibin Wang, <b>Hongguang Li</b>. <i>RankAdaptor: Hierarchical Rank Allocation for Efficient Fine-Tuning Pruned LLMs via Performance Model.</i> NAACL 2025 Findings, Corresponding.</li>
+      <li>Changhai Zhou, Yuhua Zhou, Yibin Wang, Shijie Han, Qian Qiao, <b>Hongguang Li</b>. <i>QPruner: Probabilistic Decision Quantization for Structured Pruning in Large Language Models.</i> NAACL 2025 Findings, Corresponding.</li>
+      <li>Nuo Chen, <b>Hongguang Li</b>, Jianhui Chang, Juhua Huang, Baoyuan Wang, Jia Li. <i>Compress to Impress: Unleashing the Potential of Compressive Memory in Real-World Long-Term Conversations.</i> COLING 2025 (Oral, Top 5%).</li>
+      <li>Nuo Chen, <b>Hongguang Li</b>, Baoyuan Wang, Jia Li. <i>From Good to Great: Improving Math Reasoning with Tool-Augmented Interleaf Prompting.</i> ACL 2024 Workshop (NLRSE).</li>
+      <li>Nuo Chen, <b>Hongguang Li</b>, Junqing He, Yinan Bao, Xinshi Lin, Qi Yang, Jianfeng Liu, Ruyi Gan, Jiaxing Zhang, Baoyuan Wang, Jia Li. <i>Orca: A Few-shot Benchmark for Chinese Conversational MRC.</i> EMNLP 2023 Findings.</li>
+      <li>Nuo Chen, <b>Hongguang Li</b>, Yinan Bao, Baoyuan Wang, Jia Li. <i>Natural Response Generation for Chinese Reading Comprehension.</i> EMNLP 2023 Findings.</li>
+      <li>Jiexi Liu, Ryuichi Takanobu, Jiaxin Wen, Dazhen Wan, <b>Hongguang Li</b>, Weiran Nie, Cheng Li, Wei Peng, Minlie Huang. <i>Robustness Testing of Language Understanding in Task-Oriented Dialog.</i> ACL 2021.</li>
+    </ul>
+  </details>
+
+  <h2>Patents (Authorized)</h2>
+  <details>
+    <summary>Patent List</summary>
+    <ul>
+      <li><b>CN120030278A</b> (2025): Method and System for Constructing Large Models in the Securities Domain.</li>
+      <li><b>CN118153687A</b> (2024): Memory-Enhanced Response in Dialogue Systems.</li>
+      <li><b>CN117290468B</b> (2024): Intelligent Dialogue Method, Device, and Storage Medium.</li>
+      <li><b>CN115617974A</b> (2023): Dialogue Processing Method, Device, Equipment, and Storage Medium.</li>
+      <li><b>CN115062620A</b> (2022): Semantic Understanding Method and Device.</li>
+      <li><b>CN110134964A</b> (2019): Text Matching Method Based on Hierarchical CNN and Attention.</li>
+      <li><b>CN105749438A</b> (2016): Personal Escape Assistance Device with Embedded Fire Blanket.</li>
+    </ul>
+  </details>
+
+  <h2>Academic Service</h2>
+  <ul>
+    <li>Reviewer for ARR, ICLR 2026/2025, MM 2025, ACL 2025, AAAI 2024, EMNLP 2023.</li>
+  </ul>
+
+  <h2>Awards</h2>
+  <ul>
+    <li>Shanghai Scholarship</li>
+    <li>Shanghai Outstanding Graduates</li>
+    <li>First Class Scholarship of USTC</li>
+  </ul>
+
+  <hr/>
+  <div class="small">Last updated: 2025</div>
+
+</div>
 </body>
 </html>
